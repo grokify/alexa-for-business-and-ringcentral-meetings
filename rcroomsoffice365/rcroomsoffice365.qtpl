@@ -1,0 +1,22 @@
+{% func RingCentralRoomsOffice365(data RingCentralRoomsOffice365Data) %}
+$UserCredential = Get-Credential 
+
+{% if len(data.China)>0 %}
+$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+{% else %}
+$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://partner.outlook.cn/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+{% endif %}
+
+Import-PSSession $Session
+
+Set-ExecutionPolicy Unrestricted
+
+Get-CalendarProcessing -Identity "{%s data.RoomName %}" | Format-List identity,deletesubject,addorganizertosubject,RemovePrivateProperty
+
+Set-CalendarProcessing "{%s data.RoomName %}" -AddOrganizerToSubject $false -OrganizerInfo $true -DeleteAttachments $true -DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
+
+Get-CalendarProcessing -Identity "{%s data.RoomName %}" | Format-List identity,deletesubject,addorganizertosubject,RemovePrivateProperty
+
+Remove-PSSession $Session
+
+{% endfunc %}
