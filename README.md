@@ -1,4 +1,4 @@
-# Alexa for RingCentral Meetings and Office 365 Installation Guide
+# Alexa for Business, RingCentral Meetings and Office 365 Installation Guide
 
 ## Pre-requisites:
 
