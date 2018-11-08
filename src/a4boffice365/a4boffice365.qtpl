@@ -1,0 +1,19 @@
+{% func AlexaForBusinessOffice365(data AlexaForBusinessOffice365Data) %}
+
+New-Mailbox -UserPrincipalName {%s data.Username %}@{%s data.Domain %} -Alias "AlexaforBusiness" -Name {%s data.Username %} -OrganizationalUnit Users -FirstName "{%s data.FirstName %}" -LastName "{%s data.LastName %}" -DisplayName "Alexa for Business Service Account"
+
+{% if len(data.AllMailboxes)> 0 }
+Get-Mailbox -ResultSize unlimited -RecipientTypeDetails "RoomMailbox" | Set-CalendarProcessing -DeleteComments $FALSE
+
+Get-Mailbox -ResultSize unlimited -RecipientTypeDetails “RoomMailbox” | ForEach-Object {Add-MailboxFolderPermission $_":\calendar" -user alexaforbusiness -AccessRights Editor}
+
+{% else %}
+
+Set-CalendarProcessing "{%s data.RoomName %}" -DeleteComments $FALSE
+
+Add-MailboxFolderPermission {%s data.RoomName %}:\Calendar -User alexaforbusiness -AccessRights Editor
+
+
+{% endif %}
+
+{% endfunc %}
