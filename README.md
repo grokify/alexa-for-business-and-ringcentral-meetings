@@ -9,6 +9,7 @@
 
 ## Configuration
 
+
 ### Overview
 
 The following is a list of items that will be configured as part of the configuration process:
@@ -21,6 +22,7 @@ The following is a list of items that will be configured as part of the configur
 1. A4B Room
 1. A4B Room Profile
 1. A4B Shared Device (Echo)
+
 
 ### Configuration Details
 
@@ -36,9 +38,12 @@ Use the following instructions to get your installation working:
    * https://docs.aws.amazon.com/a4b/latest/ag/getting-started.html
    * https://www.youtube.com/watch?v=FrunIqAcpjg
 
+
 ## Troubleshooting
 
+
 ### Alexa for Business
+
 
 #### AWS Access Key Id error
 
@@ -50,6 +55,7 @@ When logging into Alexa for Business in the AWS console, the following error is 
 
 If you have a valid credit card / payment method, you may need to create a new AWS account.
 
+
 #### A4B Users Error
 
 When clicking on the A4B Users account, the following error is encountered:
@@ -60,6 +66,17 @@ Fail to get organization info...
 ![](docs/a4b_error_your-enrollment-preference-could-not-be-accessed.png)
 
 If you have a valid credit card / payment method, you may need to create a new AWS account.
+
+
+## Tips
+
+These are general tips useful when setting up a test / demo system.
+
+
+### Auto-Accept Room Requests
+
+In Exchange Admin, edit the room's "booking delegates" property and select the "Accept or decline booking requests automatically".
+
 
 ## Additional Useful Links
 
