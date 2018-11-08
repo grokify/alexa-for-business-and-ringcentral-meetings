@@ -27,15 +27,14 @@ The following is a list of items that will be configured as part of the configur
 Use the following instructions to get your installation working:
 
 1. Configure RingCentral Rooms and Office 365
-   * https://success.ringcentral.com/articles/RC_Knowledge_Article/8838)
-1. Link Alexa for Business to Office 365
-   * https://docs.aws.amazon.com/a4b/latest/ag/office.html
-1. Add your Echo devices to your Alexa for Business account
-   * https://docs.aws.amazon.com/a4b/latest/ag/getting-started.html
-   * https://www.youtube.com/watch?v=FrunIqAcpjg
-
+   * https://success.ringcentral.com/articles/RC_Knowledge_Article/8838 (PowerShell)
+1. Alexa for Business - Link Office 365
+   * https://docs.aws.amazon.com/a4b/latest/ag/office.html (PowerShell)
 1. Alexa for Business - Create Rooms
    * https://docs.aws.amazon.com/a4b/latest/ag/manage-rooms.html
+1. Alexa for Business - Add Echo Devices
+   * https://docs.aws.amazon.com/a4b/latest/ag/getting-started.html
+   * https://www.youtube.com/watch?v=FrunIqAcpjg
 
 ## Troubleshooting
 
