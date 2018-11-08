@@ -34,6 +34,9 @@ Use the following instructions to get your installation working:
    * https://docs.aws.amazon.com/a4b/latest/ag/getting-started.html
    * https://www.youtube.com/watch?v=FrunIqAcpjg
 
+1. Alexa for Business - Create Rooms
+   * https://docs.aws.amazon.com/a4b/latest/ag/manage-rooms.html
+
 ## Troubleshooting
 
 ### Alexa for Business
@@ -46,6 +49,8 @@ When logging into Alexa for Business in the AWS console, the following error is 
 
 ![](docs/a4b_error_aws-access-key-id-needs-a-subscription-for-the-service.png)
 
+If you have a valid credit card / payment method, you may need to create a new AWS account.
+
 #### A4B Users Error
 
 When clicking on the A4B Users account, the following error is encountered:
@@ -54,3 +59,9 @@ Your enrollment preference could not be accessed. If the issue persists, contact
 Fail to get organization info...
 
 ![](docs/a4b_error_your-enrollment-preference-could-not-be-accessed.png)
+
+If you have a valid credit card / payment method, you may need to create a new AWS account.
+
+## Additional Useful Links
+
+* [Reset Your Echo Device](https://www.amazon.com/gp/help/customer/display.html?nodeId=GK7P5SPCQ3MN65VR)
