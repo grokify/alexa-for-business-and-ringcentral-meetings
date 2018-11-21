@@ -32,12 +32,12 @@ Use the following instructions to get your installation working:
    * https://success.ringcentral.com/articles/RC_Knowledge_Article/8838 (PowerShell)
 1. Alexa for Business - Link Office 365
    * https://docs.aws.amazon.com/a4b/latest/ag/office.html (PowerShell)
-1. Alexa for Business - Create Rooms
-   * https://docs.aws.amazon.com/a4b/latest/ag/manage-rooms.html
 1. Alexa for Business - Add Echo Devices
    * https://docs.aws.amazon.com/a4b/latest/ag/getting-started.html
    * https://www.youtube.com/watch?v=FrunIqAcpjg
-
+1. Alexa for Business - Create Rooms
+   * https://docs.aws.amazon.com/a4b/latest/ag/manage-rooms.html
+   * Assign the RingCentral Meetings Skill to the Room or Skill Group
 
 ## Troubleshooting
 
@@ -77,6 +77,9 @@ These are general tips useful when setting up a test / demo system.
 
 In Exchange Admin, edit the room's "booking delegates" property and select the "Accept or decline booking requests automatically".
 
+### Automatic start/stop scheduled meetings
+
+Enable this in the Admin App if you wish meetings to be enabled when a user joins.
 
 ## Additional Useful Links
 
